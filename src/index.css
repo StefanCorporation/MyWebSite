@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.matrix-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.matrix-bg span {
+  position: absolute;
+  color: #00ff66;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+.reactorLogo {
+  width: 40px;
+  height: 40px;
+}
+
+
+@font-face {
+  font-family: 'customFont';
+  src: url('./fonts/customFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.wellcomeFont {
+    color: #00ff00;
+    text-shadow: 0 0 1px #00ff00;                           
+    font-family:  customFont;  
+    font-size: clamp(2rem, 10vw, 100px);; 
+}
+
+.wellcomeSize {
+  width: 50px;
+}
+
+
+.nav-link {
+  position: relative;
+  color: #ccc;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-link::before,
+.nav-link::after {
+  opacity: 0;
+  transition: opacity 0.3s, text-shadow 0.3s;
+  color: #00ff99;
+  text-shadow: none;
+}
+
+.nav-link::before {
+  content: "[ ";
+  position: absolute;
+  left: 0.5em;
+}
+
+.nav-link::after {
+  content: " ]";
+  position: absolute;
+  right: 0.5em;
+}
+
+.nav-link:hover {
+  color: #00ff99;
+  text-shadow: 0 0 5px #00ff99,
+               0 0 10px #00cc88,
+               0 0 20px #009966;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  opacity: 1;
+  text-shadow: 0 0 5px #00ff99,
+               0 0 10px #00cc88,
+               0 0 20px #009966;
+}
