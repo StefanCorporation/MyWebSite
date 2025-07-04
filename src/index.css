@@ -55,7 +55,7 @@ body {
     color: #00ff00;
     text-shadow: 0 0 1px #00ff00;                           
     font-family:  customFont;  
-    font-size: clamp(2rem, 10vw, 100px);; 
+    font-size: clamp(2rem, 10vw, 100px); 
 }
 
 .wellcomeSize {
@@ -102,4 +102,65 @@ body {
   text-shadow: 0 0 5px #00ff99,
                0 0 10px #00cc88,
                0 0 20px #009966;
+}
+
+
+
+.typing {
+      font-family: monospace;
+      font-size: 24px;
+      max-width: 90vw; 
+      color: #f6f8f6;
+      text-shadow: 0 0 5px #00ff00;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      padding-right: 5px;
+      margin-top: 0;
+  }
+
+.cursor {
+  animation: blink 0.7s step-end infinite; 
+  color: #d9e0d9;
+  text-shadow: 0 0 5px #00ff00;
+  border: none;
+  padding-left: 2px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+
+
+.matrix-reveal {
+  position: relative;
+  width: 300px;            /* Default width */
+  height: 420px;           /* Default height */
+  margin: 50px auto;       /* Centered */
+}
+
+#matrix-canvas,
+#stefanImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;             /* Match parent container */
+  height: 100%;            /* Match parent container */
+  object-fit: cover;       /* Prevent distortion */
+  border-radius: 16px;
+}
+
+#matrix-canvas {
+  z-index: 2;
+  pointer-events: none;
+  background-color: transparent; /* Important for transparency */
+  transition: opacity 1s ease-in-out;
+}
+
+#stefanImg {
+  z-index: 1;
+  opacity: 0;
+  box-shadow: 0 0 20px #00ff66;
+  transition: opacity 2s ease-in-out;
 }
