@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Choice is Yours</title>
+  <link rel="stylesheet" href="./CSS/start.css">
+</head>
+<body class="backgroundImg">
+  <!-- Morpheus intro -->
+  <div id="morpheus-scene">
+    <img src="morpheus.png" alt="Morpheus" class="morpheus-img">
+    <div id="dialogue">
+      <p>"This is your last chance. After this, there is no turning back."</p>
+      <p>"You take the blue pill – the story ends. You wake up in your bed and believe whatever you want to believe."</p>
+      <p>"You take the red pill – you stay in Wonderland, and I show you how deep the rabbit hole goes."</p>
+    </div>
+    <div class="pill-buttons">
+      <button id="bluePill" class="pill blue">Blue Pill</button>
+      <button id="redPill" class="pill red">Red Pill</button>
+    </div>
+  </div>
+
+  <!-- Main website -->
+  <div id="mainSite" style="display: none;">
+    <h1>Welcome to the Real World</h1>
+    <audio id="bgMusic" src="audio/hackerstyle.mp3" autoplay loop></audio>
+    <!-- Real content here -->
+  </div>
+
+  <!-- Blue pill exit -->
+  <div id="blueExit" style="display: none;">
+    <h1>You chose the blue pill...</h1>
+    <p>Reload to try again.</p>
+  </div>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
