@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: #212529;
   color: lime;
   font-family: monospace;
   text-align: center;
@@ -9,6 +9,7 @@ body {
 .morpheus-img {
   width: 300px;
   margin-bottom: 20px;
+  
 }
 
 #dialogue p {
@@ -43,4 +44,8 @@ body {
 .blue {
   background-color: blue;
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
