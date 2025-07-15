@@ -8,19 +8,24 @@
 <body class="backgroundImg">
   <!-- Morpheus intro -->
   <div id="morpheus-scene">
-    <img src="./images/morpheus.png" alt="Morpheus" class="morpheus-img">
+    <img src="images/morpheus.png" alt="Morpheus" class="morpheus-img">
     <div id="dialogue">
       <p>"This is your last chance. After this, there is no turning back."</p>
-      <p>"You take the blue pill – the story ends. You won't be able to enjoy the music and the site will seem bland."</p>
-      <p>"You take the red pill – you stay in Wonderland, and I show you how beautiful music can be and how it colors."</p>
+      <p>"You take the blue pill – the story ends. You wake up in your bed and believe whatever you want to believe."</p>
+      <p>"You take the red pill – you stay in Wonderland, and I show you how deep the rabbit hole goes."</p>
     </div>
     <div class="pill-buttons">
-      <button onclick="window.location.href='./index.html?pill=red'" id="redPill" class="pill red">Red Pill</button>
-      <button onclick="window.location.href='./index.html?pill=blue'" id="bluePill" class="pill blue">Blue Pill</button>
+      <button onclick="window.location.href='index.html'" id="redPill" class="pill red">Red Pill</button>
+      <button onclick="window.location.href='index.html?mute=true'" id="bluePill" class="pill blue">Blue Pill</button>
     </div>
   </div>
 
+  <!-- Blue pill exit -->
+  <div id="blueExit" style="display: none;">
+    <h1>You chose the blue pill...</h1>
+    <p>Reload to try again.</p>
+  </div>
 
-  <script src="JS/start.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 </html>
