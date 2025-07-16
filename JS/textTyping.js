@@ -10,7 +10,7 @@ function typeText(text, elementId, cursorId, speed = 50, mute = false, onDone = 
   let typingSound = null;
   if (!mute) {
     typingSound = new Audio('./audio/typingsound.mp3');
-    typingSound.volume = 1.0; // Max volume
+    typingSound.volume = 1.0;
     typingSound.onerror = () => {
       console.error('Failed to load typing sound');
     };
@@ -72,24 +72,39 @@ window.onload = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const mute = urlParams.get('mute') === 'true';
 
+  const timerElement = document.getElementById('timer');
   const timerMinutes = document.getElementById('timer-minutes');
   const timerSeconds = document.getElementById('timer-seconds');
-  if (!timerMinutes || !timerSeconds) {
-    console.error('Timer minute or second element not found');
+  if (!timerElement || !timerMinutes || !timerSeconds) {
+    console.error('Timer element, minute, or second not found');
     return;
   }
 
   let timeSpent = 0;
-  let timerRunning = document.visibilityState === 'visible';
-  setInterval(() => {
-    if (timerRunning) {
-      timeSpent++;
-      const minutes = Math.floor(timeSpent / 60);
-      const seconds = timeSpent % 60;
-      timerMinutes.textContent = minutes;
-      timerSeconds.textContent = seconds < 10 ? `0${seconds}` : seconds; // Pad seconds with 0
-    }
-  }, 1000);
+  let timerRunning = false; // Start timer stopped
+
+  function startTimer() {
+    timerRunning = document.visibilityState === 'visible';
+    timerElement.classList.add('show'); // Custom transition
+    // For Animate.css, use: timerElement.classList.add('animate__animated', 'animate__fadeIn');
+    setInterval(() => {
+      if (timerRunning) {
+        timeSpent++;
+        const minutes = Math.floor(timeSpent / 60);
+        const seconds = timeSpent % 60;
+
+        // Flicker effect
+        const matrixChars = '</[]$%#@∑∆π{}>';
+        timerMinutes.textContent = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+        timerSeconds.textContent = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+
+        setTimeout(() => {
+          timerMinutes.textContent = minutes;
+          timerSeconds.textContent = seconds < 10 ? `0${seconds}` : seconds;
+        }, 200);
+      }
+    }, 1000);
+  }
 
   document.addEventListener('visibilitychange', () => {
     timerRunning = document.visibilityState === 'visible';
@@ -107,9 +122,9 @@ window.onload = () => {
         "typing2",
         "cursor2",
         50,
-        mute
+        mute,
+        startTimer // Start timer with fade-in after typing2
       );
     }
   );
 };
-

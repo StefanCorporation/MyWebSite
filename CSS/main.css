@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: auto;
+  min-height: 100vh;
+}
+
+.matrix-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.matrix-bg span {
+  position: absolute;
+  color: #00ff66;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+.reactorLogo {
+  width: 40px;
+  height: 40px;
+}
+
+
+@font-face {
+  font-family: 'customFont';
+  src: url('../fonts/customFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.wellcomeFont {
+    color: #00ff00;
+    text-shadow: 0 0 1px #00ff00;                           
+    font-family:  customFont;  
+    font-size: clamp(2rem, 10vw, 100px); 
+}
+
+.wellcomeSize {
+  width: 50px;
+}
+
+
+.nav-link {
+  position: relative;
+  color: #ccc;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-link::before,
+.nav-link::after {
+  opacity: 0;
+  transition: opacity 0.3s, text-shadow 0.3s;
+  color: #00ff99;
+  text-shadow: none;
+}
+
+.nav-link::before {
+  content: "[ ";
+  position: absolute;
+  left: 0.5em;
+}
+
+.nav-link::after {
+  content: " ]";
+  position: absolute;
+  right: 0.5em;
+}
+
+.nav-link:hover {
+  color: #00ff99;
+  text-shadow: 0 0 5px #00ff99,
+               0 0 10px #00cc88,
+               0 0 20px #009966;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  opacity: 1;
+  text-shadow: 0 0 5px #00ff99,
+               0 0 10px #00cc88,
+               0 0 20px #009966;
+}
+
+
+
+.typing {
+      font-family: monospace;
+      font-size: 24px;
+      max-width: 90vw; 
+      color: #f6f8f6;
+      text-shadow: 0 0 5px #00ff00;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      padding-right: 5px;
+      margin-top: 0;
+  }
+
+.cursor {
+  animation: blink 0.7s step-end infinite; 
+  color: #d9e0d9;
+  text-shadow: 0 0 5px #00ff00;
+  border: none;
+  padding-left: 2px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+
+
+.matrix-reveal {
+  position: relative;
+  width: 300px;            /* Default width */
+  height: 420px;           /* Default height */
+  margin: 50px auto;       /* Centered */
+}
+
+#matrix-canvas,
+#stefanImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;             /* Match parent container */
+  height: 100%;            /* Match parent container */
+  object-fit: cover;       /* Prevent distortion */
+  border-radius: 16px;
+}
+
+#matrix-canvas {
+  z-index: 2;
+  pointer-events: none;
+  background-color: transparent; /* Important for transparency */
+  transition: opacity 1s ease-in-out;
+}
+
+#stefanImg {
+  z-index: 1;
+  opacity: 0;
+  box-shadow: 0 0 20px #00ff66;
+  transition: opacity 2s ease-in-out;
+}
+
+
+/* src/CSS/index.css */
+#timer {
+  color: #d9e0d9;
+  text-shadow: 0 0 5px #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0; /* Hidden initially */
+  height: 0; /* No height initially */
+  overflow: hidden; /* Prevent content from showing */
+  transition: opacity 1s ease-in, height 1s ease-in; /* Smooth transition */
+}
+
+#timer.show {
+  opacity: 1; /* Fade in */
+  height: 60px; /* Adjust based on actual height */
+  /* For Animate.css, add in JS: animate__animated animate__fadeIn */
+}
+
+#timer-minutes, #timer-seconds {
+  display: inline-block;
+  min-width: 2ch;
+  animation: matrix-flicker 0.5s infinite;
+}
+
+@keyframes matrix-flicker {
+  0%, 80% { opacity: 1; }
+  85% { opacity: 0.7; }
+  90% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+
+
+.container.text-center .row {
+  transition: transform 1s ease-in; /* Smooth slide for row content */
+}
+
+
+#getJob {
+  z-index: 1;
+  opacity: 1;
+  box-shadow: 0 0 20px #00ff66;
+  transition: opacity 2s ease-in-out;
+  border-radius: 16px;
+  
+}
+
+.getJobText {
+  color: #d9e0d9;
+  text-shadow: 0 0 5px #00ff00;
+}
