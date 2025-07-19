@@ -183,7 +183,7 @@ body {
 
 #timer.show {
   opacity: 1; /* Fade in */
-  height: 60px; /* Adjust based on actual height */
+  height: 120px; /* Adjust based on actual height */
   /* For Animate.css, add in JS: animate__animated animate__fadeIn */
 }
 
