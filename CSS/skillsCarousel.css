@@ -1,0 +1,52 @@
+/* Ensure Swiper styles are included */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.col-12 {
+    padding: 20px;
+}
+
+.mySwiper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust as needed */
+}
+
+.matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Canvas overlays the image */
+    
+}
+
+.skill-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.5));
+    z-index: 1; /* Image below canvas initially */
+    opacity: 0; /* Hidden until rain fades */
+    transition: opacity 1s ease-in-out;
+}
+
+.skill-img.visible {
+    opacity: 1; /* Revealed after rain */  
+}
+
+.swiper-pagination-bullet {
+    background: #0f0;
+    box-shadow: 0 0 20px #00ff66;
+}
