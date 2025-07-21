@@ -222,9 +222,3 @@ body {
 }
 
 
-.skillsTools {
-    color: #00ff00;
-    text-shadow: 0 0 1px #00ff00;                           
-    font-family:  customFont;  
-    font-size: clamp(2rem, 10vw, 50px); 
-}

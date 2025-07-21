@@ -1,8 +1,3 @@
-/* Ensure Swiper styles are included */
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-}
 
 .col-12 {
     padding: 20px;
@@ -19,7 +14,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Adjust as needed */
+    height: auto;
+    padding: 20px;
+    flex-shrink: 0;
 }
 
 .matrix-canvas {
@@ -28,8 +25,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2; /* Canvas overlays the image */
-    
+    z-index: 2; /* Canvas overlays the image */    
 }
 
 .skill-img {
@@ -49,4 +45,31 @@ body {
 .swiper-pagination-bullet {
     background: #0f0;
     box-shadow: 0 0 20px #00ff66;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 20px;
+    text-align: center;
+    z-index: 5;
+}
+
+
+.skillsTools {
+    color: #00ff00;
+    text-shadow: 0 0 1px #00ff00;                           
+    font-family:  customFont;  
+    font-size: clamp(2rem, 10vw, 50px); 
+}
+
+
+.glow-icon {
+    width: clamp(50px, 10vw, 100px);
+    height: clamp(50px, 10vw, 100px);
+    filter: drop-shadow(0 0 6px #0f0) drop-shadow(0 0 8px #0f0);
+    transition: transform 0.3s ease;
+}
+
+.glow-icon:hover {
+  transform: scale(1.1);
 }

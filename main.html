@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./CSS/skillsCarousel.css">
+    <link rel="stylesheet" href="./CSS/projects.css">
     
 </head>
 <body>
@@ -110,52 +111,116 @@
             </div>
     </div>
 
-    <div class="col-12">
+    
+    <div class="col-12 mb-5">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="75" height="75"/>
+                      <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/>
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="75" height="75"/>
+                      <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/>
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="75" height="75"/>
+                    <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="75" height="75"/>
+                    <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"/>
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="75" height="75"/>
+                      <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                    <img style="filter: brightness(2.5);" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="75" height="75"/>
+                    <img class="glow-icon" 
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="75" height="75"/>
+                    <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="75" height="75"/>
+                    <img class="glow-icon" class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Postgres" width="75" height="75"/>
+                     <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Postgres" />
                 </div>
                 <div class="swiper-slide">
                     <canvas class="matrix-canvas"></canvas>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="75" height="75"/>
+                    <img class="glow-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"/>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
+    </div>
+
+
+    <!--Projects-->
+
+    <div class="container text-center pt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="projects">⚙️ Projects ⚗️</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project-container">
+    <div class="project-row">
+        <div class="project-image-wrapper">
+        <canvas class="project-canvas"></canvas>
+        <img class="project-img hidden" src="./images/rent.png" alt="Project 1">
+        </div>
+        <div class="project-text hidden" data-text="My cool Django project using PostgreSQL and REST API. Visit github.com/stefan/project1.">
+            <span class="typed-text"></span><span class="cursor">▍</span>
+        </div>
+
+    </div>
+
+    <div class="project-row reverse">
+        <div class="project-image-wrapper">
+        <canvas class="project-canvas"></canvas>
+        <img class="project-img hidden" src="./images/efur.png" alt="Project 2">
+        </div>
+        <div class="project-text hidden" data-text="My cool Django project using PostgreSQL and REST API. Visit github.com/stefan/project1.">
+            <span class="typed-text"></span><span class="cursor">▍</span>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-row">
+        <div class="project-image-wrapper">
+        <canvas class="project-canvas"></canvas>
+        <img class="project-img hidden" src="./images/tindog.png" alt="Project 1">
+        </div>
+        <div class="project-text hidden" data-text="My cool Django project using PostgreSQL and REST API. Visit github.com/stefan/project1.">
+            <span class="typed-text"></span><span class="cursor">▍</span>
+        </div>
+
+    </div>
+
+
+
+    <div class="project-row reverse">
+        <div class="project-image-wrapper">
+        <canvas class="project-canvas"></canvas>
+        <img class="project-img hidden" src="./images/calories.png" alt="Project 2">
+        </div>
+        <div class="project-text hidden" data-text="My cool Django project using PostgreSQL and REST API. Visit github.com/stefan/project1.">
+            <span class="typed-text"></span><span class="cursor">▍</span>
+        </div>
+
+    </div>
     </div>
 
 
@@ -166,7 +231,7 @@
                 <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"aria-label="Bootstrap"> 
                     <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> 
                 </a> 
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> 
+                <span class="mb-3 mb-md-0 text-body-secondary">Establishemt Gorup | Stefan Corporation</span> 
             </div> 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
                 <li class="ms-3">
@@ -185,7 +250,11 @@
         </footer> 
     </div>
 
+
+
     
+
+
 </div>
 
 </body>
@@ -197,6 +266,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./JS/skillsCarousel.js"></script>
+<script src="./JS/projects.js"></script>
 
 
 
