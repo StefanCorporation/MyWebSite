@@ -1,0 +1,7 @@
+🐶 Tindog, the dumbest idea but i had to do it because it was in the course i had to do this task. 
+P.S. I don't like dogs.
+
+📦 GitHub Repo:
+https://github.com/StefanCorporation/TinDog-Task.git
+
+Link: https://stefancorporation.github.io/TinDog-Task/

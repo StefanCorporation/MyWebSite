@@ -1,0 +1,9 @@
+💺 E-Furniture is an e-commerce platform 
+built step-by-step through a 
+course using Django and Python. It features a 
+responsive product catalog, user authentication
+with a clean interface styled using Bootstrap 
+and JavaScript. 
+ 
+📦 GitHub Repo:
+https://github.com/StefanCorporation/E-Furniture.git

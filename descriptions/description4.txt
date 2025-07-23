@@ -1,0 +1,10 @@
+📊 CaloriesFLow is an in-development web application for tracking calories, 
+built with Django, JavaScript, and Bootstrap. 
+It allows users to log meals, track calories and view progress through a responsive interface. 
+Still under active development.
+
+📦 GitHub Repo:
+https://github.com/StefanCorporation/CaloriesFLow.git
+
+
+

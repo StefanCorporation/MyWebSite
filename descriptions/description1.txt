@@ -1,0 +1,8 @@
+🚗 Car Rent Escalate
+Car Rent Escalate is a full-stack web application designed 
+for seamless car rental management. The platform enables users to browse, 
+book, and manage car rentals while providing admins with intuitive tools 
+for fleet and booking control.
+
+📦 GitHub Repo:
+github.com/StefanCorporation/Car-rent-Escalate
