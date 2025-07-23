@@ -5,6 +5,3 @@ Still under active development.
 
 📦 GitHub Repo:
 https://github.com/StefanCorporation/CaloriesFLow.git
-
-
-
