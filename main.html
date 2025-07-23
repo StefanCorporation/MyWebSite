@@ -27,20 +27,21 @@
         
         <ul class="nav nav-pills"> 
             <li >
-                <audio  id="bgMusic" style="width:200px; height: 30px;" autoplay >
+                <audio  id="bgMusic" style="width:200px; height: 30px;" autoplay loop>
                     <source src="./audio/hackerstyle.mp3">
                 </audio>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link text-light-emphasis" aria-current="page">{ Home }</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link text-light-emphasis">&ltAbout/&gt</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link text-light-emphasis">&ltSkills/&gt</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link text-light-emphasis">&ltProjects/&gt</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link text-light-emphasis">&ltPricing/&gt</a></li> 
-            <li class="nav-item"><a href="#" class="nav-link text-light-emphasis">&ltContact/&gt</a></li> 
+            <li class="nav-item"><a href="#home" class="nav-link text-light-emphasis" aria-current="page">{ Home }</a></li> 
+            <li class="nav-item"><a href="#about" class="nav-link text-light-emphasis">&ltAbout/&gt</a></li> 
+            <li class="nav-item"><a href="#skills" class="nav-link text-light-emphasis">&ltSkills/&gt</a></li> 
+            <li class="nav-item"><a href="#projects" class="nav-link text-light-emphasis">&ltProjects/&gt</a></li> 
+            <li class="nav-item"><a href="#pricing" class="nav-link text-light-emphasis">&ltPricing/&gt</a></li> 
+            <li class="nav-item"><a href="#contact" class="nav-link text-light-emphasis">&ltContact/&gt</a></li> 
         </ul> 
     </header> 
 
 
+ <section id="home">
     <div class="container text-center">
         <div class="row">
 
@@ -76,9 +77,10 @@
 
         </div>
     </div>
-
+ </div>
 
     <!--About-->
+<section id="about">    
     <div class="px-4 py-5 my-5 text-center"> 
         
             <h1 class="wellcomeFont display-5 fw-bold ">✨ A little about me ✨</h1> 
@@ -101,10 +103,10 @@
             alt="" width="300" height="400"> 
             
     </div>
-
+</section>
 
     <!--Skills Carousel-->
-
+<section id="skills">
     <div class="container text-center">     
             <div class="col-12">
                 <h1 class="skillsTools">🪛 Skills and tools 🔧</h1>
@@ -160,9 +162,10 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-
+</section>
 
     <!--Projects-->
+<section id="projects">
     <div class="container text-center pt-5">
         <div class="row">
             <div class="col-12">
@@ -214,9 +217,10 @@
             </div>
         </div>
     </div>
-
+</section>
 
     <!--Pricing-->
+<section id="pricing">
     <div class="px-4 pt-5 my-5 text-center"> 
         <h1 class="pricing">💲 Pricing 💲</h1> 
         <div class="col-lg-6 mx-auto"> 
@@ -231,34 +235,73 @@
             </div> 
         </div> 
     </div>
+</section>
+
+    <!--Contact-->
+<section id="contact">
+    <div class="container text-center">
+    <div class="row">
+        <h1 class="pricing mb-4">📬 Contact me 📬</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+        <iframe class="contact" src="https://forms.gle/7oFPKQSHuYDcgB3o7" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+        </iframe>
+        </div>
+    </div>
+    </div>
+</section>      
+
+
+
+
 
     <!--Footer-->
     <div class="container"> 
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
             <div class="col-md-4 d-flex align-items-center"> 
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"aria-label="Bootstrap"> 
-                    <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> 
-                </a> 
-                <span class="mb-3 mb-md-0 text-body-secondary">Establishemt Gorup | Stefan Corporation</span> 
+                
+                <span class="mb-3 mb-md-0 text-body-secondary"> ©Establishemt Gorup </span>
+                <img class="ms-2" style="width: 40px; height: 40px;" src="./images/reactor.png" alt="">
+                </span>| Stefan Corporation</span> 
             </div> 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Instagram">
-                        <svg class="bi" width="24" height="24" aria-hidden="true">
-                            <use xlink:href="#instagram"></use>
-                        </svg>
+                   <a href="https://www.instagram.com/the_establishment.corp/" target="_blank">
+                    <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" width="30" />
+                   </a>
+                </li> 
+                <li class="ms-3">
+                    <a href="https://wa.me/571082714" target="_blank">
+                        <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" width="30" />
                     </a>
                 </li> 
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#" aria-label="Facebook">
-                        <svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg>
+                    <a href="https://t.me/the_establishment_9r_43s" target="_blank">
+                        <img src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Telegram" width="30" />
                     </a>
-                </li> 
+                </li>
+                <li class="ms-3">
+                    <a href="https://github.com/StefanCorporation" target="_blank">
+                        <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="30" />
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="mailto:stefan1234518@gmail.com">
+                        <img src="https://cdn.simpleicons.org/google/EA4335" alt="Gmail" width="30" />
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="https://www.linkedin.com/in/stefan-ashugyan/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30">                        
+                    </a>
+                </li>
             </ul> 
         </footer> 
     </div>
 
-
+  
 
     
 
@@ -275,6 +318,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./JS/skillsCarousel.js"></script>
 <script src="./JS/projects.js"></script>
+<script src="./JS/navigation.js"></script>
 
 
 

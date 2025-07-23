@@ -5,6 +5,10 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .matrix-bg {
   position: fixed;
   width: 100%;
@@ -232,4 +236,10 @@ body {
 .pricingText {
   color: #b9f0b9;
   text-shadow: 0 0 5px #00ff00;
+}
+
+.contact {
+  box-shadow: 0 0 20px #00ff66;
+  border-radius: 16px;
+  
 }
